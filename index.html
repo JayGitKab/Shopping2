@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="Style1.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.5.1.min.js"></script>
+    <script src="Scripts/ShopJS.js"></script>
+</head>
+<body>
+    <!-- Show Create Div (button) -->
+    <div id="createListDiv">
+        <h1>Simple Shopping Lilst </h1>
+        <input type="text" idl="shoppingListName" placeholder="New list" />
+        <button onclick="createShoppingList()">Create</button>
+    </div>
+
+    <!-- Display list of items -->
+    <div id="shoppingListDiv" style="display:none;">
+        <h1 id="shoppingListTitle">New List </h1>
+        <input id="newItemName" type="text" placeholder="New Item" />
+        <button onclick="addItem()">Add</button>
+        <ul id="shoppingListItems">
+            <li>Salad<button>D</button><button>C</button></li>
+            <li>Milk<button>D</button><button>C</button></li>
+            <li>Toamtoes<button>D</button><button>C</button></li>
+        </ul>
+    </div>
+</body>
+</html>
